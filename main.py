@@ -22,7 +22,7 @@ def lsr(x):
         return [x]
 
 if not os.path.exists('maildir'):
-    os("""
+    sh("""
     wget https://www.cs.cmu.edu/~./enron/enron_mail_20150507.tar.gz
     tar xf enron_mail_20150507.tar.gz
     """)
